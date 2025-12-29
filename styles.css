@@ -234,9 +234,11 @@ body::after {
 
 .members-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 2rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .member-card {
@@ -450,8 +452,10 @@ body::after {
     max-width: 1200px;
     margin: 0 auto 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .await-card {
@@ -724,8 +728,10 @@ body::after {
 
 .inspiration-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .inspiration-card {
@@ -859,21 +865,96 @@ body::after {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Navigation */
     .nav {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1rem;
+    }
+    
+    .logo {
+        gap: 0.5rem;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
     }
     
     .logo span {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .nav-year {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 6rem 1rem 3rem;
+    }
+    
+    .hero-content {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+    
+    .glitch {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+    
+    .typewriter {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    /* Member Cards */
+    .new-members {
+        padding: 0;
+        width: 100%;
     }
     
     .members-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .member-card {
+        padding: 1.5rem;
+    }
+    
+    .member-name {
+        font-size: 1.1rem;
+    }
+    
+    /* What Awaits Section */
+    .what-awaits {
+        padding: 4rem 1rem;
+    }
+    
+    .awaits-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .await-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .icon-wrapper {
+        font-size: 3rem;
+    }
+    
+    .await-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Showcase Section */
+    .showcase {
+        padding: 4rem 1rem;
     }
     
     .mentor-card {
@@ -881,16 +962,191 @@ body::after {
         gap: 2rem;
     }
     
-    .awaits-grid {
-        grid-template-columns: 1fr;
+    .mentor-image-wrapper {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
+    .image-placeholder {
+        font-size: 4rem;
+    }
+    
+    .image-frame {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+        border-radius: 10px;
+    }
+    
+    .mentor-info h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .mentor-role {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .mentor-description {
+        text-align: center;
     }
     
     .social-links {
         justify-content: center;
+    }
+    
+    .social-link {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    /* Inspiration Grid */
+    .inspiration-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .inspiration-card {
+        padding: 1.5rem;
+    }
+    
+    .inspiration-card i {
+        font-size: 2.5rem;
+    }
+    
+    .inspiration-card h4 {
+        font-size: 1.3rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 3rem 1rem 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .footer-logo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-message h4 {
+        font-size: 1.3rem;
+    }
+    
+    .retro-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    /* Section titles */
+    .split-text {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
+    /* Card content */
+    .card-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* Director cards */
+    .director-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .director-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .message-text {
+        font-size: 1rem;
+    }
+    
+    /* Fix for horizontal overflow */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    * {
+        max-width: 100%;
+    }
+    
+    .hero-content,
+    .new-members,
+    .section-title,
+    .awaits-grid,
+    .mentor-section,
+    .footer-content {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Special fix for very small phones (iPhone SE, etc) */
+@media (max-width: 400px) {
+    .nav {
+        padding: 0.8rem 0.8rem;
+    }
+    
+    .logo span {
+        font-size: 0.75rem;
+    }
+    
+    .nav-year {
+        font-size: 1.1rem;
+    }
+    
+    .glitch {
+        font-size: clamp(2.5rem, 15vw, 4rem);
+    }
+    
+    .typewriter {
+        font-size: 1.1rem;
+    }
+    
+    .members-grid {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+    
+    .member-card {
+        padding: 1.2rem;
+    }
+    
+    .member-name {
+        font-size: 1rem;
+    }
+    
+    .await-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .image-frame {
+        max-width: 240px;
+    }
+    
+    .mentor-image-wrapper {
+        max-width: 240px;
     }
 }
 
