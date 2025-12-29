@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BUCC Creative Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Retro Grid Background -->
+    <canvas id="retroGrid"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://pbs.twimg.com/profile_images/1636339460650012672/sUnXFHHQ_400x400.jpg" alt="BUCC Logo">
+                <span>BUCC CREATIVE</span>
+            </div>
+            <div class="nav-year">2025</div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero Welcome -->
+    <section class="hero" id="hero">
+        <div class="glitch-container">
+            <h1 class="glitch" data-text="WELCOME">WELCOME</h1>
+        </div>
+        <div class="subtitle">
+            <p class="typewriter">To the Creative Chaos</p>
+        </div>
+        
+        <div class="new-members">
+            <h2 class="neon-text">Congratulations</h2>
+            <div class="members-grid">
+                <div class="member-card" data-index="0">
+                    <div class="card-inner">
+                        <span class="member-name">Nawshin Mahjabin Namira</span>
+                    </div>
+                </div>
+                <div class="member-card" data-index="1">
+                    <div class="card-inner">
+                        <span class="member-name">Fouzia Fariha</span>
+                    </div>
+                </div>
+                <div class="member-card" data-index="2">
+                    <div class="card-inner">
+                        <span class="member-name">Ayesha Afia</span>
+                    </div>
+                </div>
+                <div class="member-card" data-index="3">
+                    <div class="card-inner">
+                        <span class="member-name">Sumaiya Tazreen Hai</span>
+                    </div>
+                </div>
+                <div class="member-card" data-index="4">
+                    <div class="card-inner">
+                        <span class="member-name">Anika Rahman Sporshi</span>
+                    </div>
+                </div>
+                <div class="member-card" data-index="5">
+                    <div class="card-inner">
+                        <span class="member-name">Ananya Saha Orni</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll to enter</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Director Messages -->
+    <section class="directors" id="directors">
+        <div class="section-title">
+            <h2 class="split-text">Words from the Directors</h2>
+        </div>
+        
+        <div class="message-container">
+            <div class="message-card left" data-director="amit">
+                <div class="card-content">
+                    <div class="director-info">
+                        <div class="avatar">AS</div>
+                        <div>
+                            <h3>Amit Sutradhar</h3>
+                            <p class="role">Director, Creative Department</p>
+                        </div>
+                    </div>
+                    <div class="message-text">
+                        <p>A big welcome to all our new members! We're really happy to have you join the Creative Department—a place where <span class="highlight">ideas, creativity, and teamwork</span> come together.</p>
+                        <p>This is your space to <span class="highlight">learn, explore, and express yourself freely</span>. Don't worry about being perfect—try new things, ask questions, and enjoy the process. We're all here to grow together.</p>
+                        <p>I'm looking forward to meet with you all and creating some amazing stuff together!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-card right" data-director="pritom">
+                <div class="card-content">
+                    <div class="director-info">
+                        <div class="avatar">PM</div>
+                        <div>
+                            <h3>Pritom Mondal</h3>
+                            <p class="role">Director, Creative Department</p>
+                        </div>
+                    </div>
+                    <div class="message-text">
+                        <p>YOU made it! You just joined one of the <span class="highlight">oldest, biggest and most probably exciting clubs</span> at BRAC University. Let's be honest, it's also the most chaotic in the best way possible.</p>
+                        <p>This isn't just a department; it's a house of a playground for mad ideas and honestly? <span class="highlight">We're all a little unhinged here and we love it</span>.</p>
+                        <p>So buckle up, unleash your inner creative chaos and show us what you've got!</p>
+                        <p class="quote">"WE ARE NOT A FAMILY, just a club"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: What Awaits -->
+    <section class="what-awaits" id="awaits">
+        <div class="section-title">
+            <h2 class="split-text">What Awaits You</h2>
+        </div>
+        
+        <div class="awaits-grid">
+            <div class="await-card" data-color="cyan">
+                <div class="icon-wrapper">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Creative Freedom</h3>
+                <p>No boundaries, no limits. This is your canvas to experiment, fail, learn, and create masterpieces. Your wildest ideas are welcome here.</p>
+            </div>
+            
+            <div class="await-card" data-color="magenta">
+                <div class="icon-wrapper">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Unhinged Squad</h3>
+                <p>Meet brilliant minds who are just as chaotic as you. Collaborate, brainstorm at 3 AM, and create magic with people who get it.</p>
+            </div>
+            
+            <div class="await-card" data-color="yellow">
+                <div class="icon-wrapper">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Real Projects</h3>
+                <p>Work on actual campaigns, designs, and creative projects that matter. Build your portfolio while having the time of your life.</p>
+            </div>
+            
+            <div class="await-card" data-color="green">
+                <div class="icon-wrapper">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Growth & Learning</h3>
+                <p>Level up your skills through workshops, mentorship, and hands-on experience. We're all here to grow together.</p>
+            </div>
+        </div>
+
+        <div class="chaos-message">
+            <div class="chaos-box">
+                <p class="big-text">Embrace the <span class="glitch-inline" data-text="CHAOS">CHAOS</span></p>
+                <p>This is where creative magic happens</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Creative Showcase & Mentor -->
+    <section class="showcase" id="showcase">
+        <div class="section-title">
+            <h2 class="split-text">Your Creative Journey Starts Here</h2>
+        </div>
+
+        <div class="mentor-section">
+            <div class="mentor-card">
+                <div class="mentor-image-wrapper">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="image-frame"></div>
+                </div>
+                <div class="mentor-info">
+                    <h3>Tahmeed Ferdous</h3>
+                    <p class="mentor-role">Senior Executive, Creative Department</p>
+                    <div class="mentor-description">
+                        <p>Hey there! I'm here to guide you through this creative journey. Remember, every great designer started where you are now. Let's create something extraordinary together!</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://tahmeedferdous.netlify.app/" target="_blank" class="social-link" data-tooltip="Portfolio">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <a href="https://www.behance.net/tahmeedferdous" target="_blank" class="social-link" data-tooltip="Behance">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://www.instagram.com/design_lab_tf/" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tahmeed-bus/" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inspiration-grid">
+                <div class="inspiration-card">
+                    <i class="fas fa-palette"></i>
+                    <h4>Design with Purpose</h4>
+                    <p>Every pixel, every color, every shape tells a story</p>
+                </div>
+                <div class="inspiration-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Create & Code</h4>
+                    <p>Blend creativity with technology to build the future</p>
+                </div>
+                <div class="inspiration-card">
+                    <i class="fas fa-pen-nib"></i>
+                    <h4>Never Stop Learning</h4>
+                    <p>The best creatives are eternal students</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://pbs.twimg.com/profile_images/1636339460650012672/sUnXFHHQ_400x400.jpg" alt="BUCC Logo">
+                <h3>BUCC Creative Department</h3>
+                <p>Where chaos meets creativity</p>
+            </div>
+            
+            <div class="footer-message">
+                <h4>Ready to Begin?</h4>
+                <p>Your creative adventure starts now. Don't hold back, don't overthink—just create!</p>
+                <div class="cta-button">
+                    <button class="retro-button">Let's Create Magic</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 BRAC University Computer Club - Creative Department</p>
+            <p class="easter-egg">Made with <span class="heart">❤</span> and a lot of caffeine</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
